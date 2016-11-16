@@ -7,6 +7,7 @@ var NavDropdown = require('react-bootstrap/lib/NavDropdown');
 var MenuItem = require('react-bootstrap/lib/MenuItem');
 var Image = require('react-bootstrap/lib/Image');
 var Link = ReactRouter.Link;
+var luffyImg = require('../assets/img/luffy.png');
 
 var Home = React.createClass({		  
 	render: function(){
@@ -14,38 +15,27 @@ var Home = React.createClass({
 			<div>
 				<Navbar inverse collapseOnSelect>
 					<Navbar.Header>
-				    <Navbar.Brand>
-				        <a href="#">LUFFY HOME</a>
-				      </Navbar.Brand>
-				      <Navbar.Toggle />
-				    </Navbar.Header>
+						<Nav>
+		      				<Image eventKey={1} className="luffyImg" src={luffyImg}></Image>
+		      			</Nav>
+				    	<Navbar.Brand>
+				        	<a href="#">LUFFY HOME</a>
+				        </Navbar.Brand>
+				        <Navbar.Toggle />
+				        </Navbar.Header>
 				    <Navbar.Collapse>
-				      <Nav>
-				        <NavItem eventKey={1} href="#">Link</NavItem>
-				        <NavItem eventKey={2} href="#">Link</NavItem>
-				        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-				          <MenuItem eventKey={3.1}>Action</MenuItem>
-				          <MenuItem eventKey={3.2}>Another action</MenuItem>
-				          <MenuItem eventKey={3.3}>Something else here</MenuItem>
-				          <MenuItem divider />
-				          <MenuItem eventKey={3.3}>Separated link</MenuItem>
-				        </NavDropdown>
-				      </Nav>
-				      <Nav pullRight>
-				        <NavItem eventKey={1} href="#">Link Right</NavItem>
-				        <NavItem eventKey={2} href="#">Link Right</NavItem>
-				      </Nav>
+			      		<Nav>
+					        <NavDropdown eventKey={1} title="React" id="basic-nav-dropdown">
+					        	<MenuItem eventKey={1.1}><Link to="reactInfo">react 설명</Link></MenuItem>
+					        	<MenuItem eventKey={1.2}><Link to="reactExam">react 예제</Link></MenuItem>
+					        </NavDropdown>
+				        </Nav>
+				        <Nav pullRight>
+				        	<NavItem eventKey={2} href="#">Link Right</NavItem>
+				        </Nav>
 				    </Navbar.Collapse>
 			    </Navbar>
-				<header id="header">
-					<h1><Link to="/">header</Link></h1>
-					<div>
-						<ul>
-							<li><Link to="reactInfo">react 설명</Link></li>
-							<li><Link to="reactExam">react 예제</Link></li>
-						</ul>
-					</div>
-				</header>
+
 				<div className='main'>
 					{this.props.children}
 				</div>
