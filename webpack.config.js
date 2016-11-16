@@ -26,6 +26,10 @@ module.exports = {
 	  	{
 	        test: /\.css$/,
 	        loader: "style-loader!css-loader"
+	  	},
+	  	{
+	  	  test: /\.(png|jpg)$/,
+	  	  loader: 'url-loader'
 	  	}
       ]
   },
@@ -34,6 +38,6 @@ module.exports = {
       new HtmlWebpackPlugin({
 	      template: './src/index.html',
 	      inject: false
-	  })
+	  })               
   ]
 };

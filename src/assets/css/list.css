@@ -1,9 +1,10 @@
 h1 {display:none}
 header#header {}
 header ul {height:50px}
-header li { height:30px; width:300px; display:inline; margin:20px; position:relative; top:10px}
+header li {height:30px; width:300px; display:inline; margin:20px; position:relative; top:10px}
 
-div.body { height:700px;}
+div.body {height:700px;}
+div.main {background-image: url("../img/luffy.png") ;}
 
 section.reactExamTop {height:35px}
 section.reactExamTop > input {width: 300px; height:30px}

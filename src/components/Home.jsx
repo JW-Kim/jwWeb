@@ -5,6 +5,7 @@ var Nav = require('react-bootstrap/lib/Nav');
 var NavItem = require('react-bootstrap/lib/NavItem');
 var NavDropdown = require('react-bootstrap/lib/NavDropdown');
 var MenuItem = require('react-bootstrap/lib/MenuItem');
+var Image = require('react-bootstrap/lib/Image');
 var Link = ReactRouter.Link;
 
 var Home = React.createClass({		  
@@ -14,7 +15,7 @@ var Home = React.createClass({
 				<Navbar inverse collapseOnSelect>
 					<Navbar.Header>
 				    <Navbar.Brand>
-				        <a href="#">React-Bootstrap</a>
+				        <a href="#">JW-Web</a>
 				      </Navbar.Brand>
 				      <Navbar.Toggle />
 				    </Navbar.Header>
@@ -45,7 +46,7 @@ var Home = React.createClass({
 						</ul>
 					</div>
 				</header>
-				<div>
+				<div className='main'>
 					{this.props.children}
 				</div>
 				<footer id="footer"><h1>footer</h1></footer>

@@ -6,6 +6,7 @@ var Home = require('./components/Home');
 var ReactInfo = require('./components/reactInfo/ReactInfo');
 var ReactExam = require('./components/reactExam/ReactExam');
 require('./assets/css/list.css');
+require("./assets/img/luffy.png");
 
 var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
