@@ -15,7 +15,7 @@ var Home = React.createClass({
 				<Navbar inverse collapseOnSelect>
 					<Navbar.Header>
 				    <Navbar.Brand>
-				        <a href="#">JW-Web</a>
+				        <a href="#">LUFFY HOME</a>
 				      </Navbar.Brand>
 				      <Navbar.Toggle />
 				    </Navbar.Header>
