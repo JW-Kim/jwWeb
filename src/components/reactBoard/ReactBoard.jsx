@@ -2,6 +2,8 @@ var React = require('react');
 var ReactBsTable  = require('react-bootstrap-table');
 var BootstrapTable = ReactBsTable.BootstrapTable;
 var TableHeaderColumn = ReactBsTable.TableHeaderColumn;
+var Button = require('react-bootstrap/lib/Button');
+var Pagination = require('react-bootstrap/lib/Pagination');
 require('react-bootstrap-table/dist/react-bootstrap-table-all.min.css');
 
 var products = [{
@@ -78,13 +80,27 @@ var ReactBoard = React.createClass({
 	
 	render : function(){
 		return(
-				<div>
-					<BootstrapTable data={ products } height='700'>
-			        	<TableHeaderColumn dataField='id' isKey>Product ID</TableHeaderColumn>
-			        	<TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
-			        	<TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
-			    	</BootstrapTable>
-				</div>
+			<div>
+				<p className="btnAddContent"><Button>글쓰기</Button></p>
+				<BootstrapTable data={ products } height='650'>
+		        	<TableHeaderColumn dataField='id' isKey>Product ID</TableHeaderColumn>
+		        	<TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
+		        	<TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
+		    	</BootstrapTable>
+		    	<div className="pageNav">
+			    	<Pagination
+				        prev
+				        next
+				        first
+				        last
+				        ellipsis
+				        boundaryLinks
+				        items={20}
+				        maxButtons={5}
+				        activePage={1}
+				        onSelect={this.handleSelect} />
+			     </div>
+			</div>
 		)
 	}
 })
