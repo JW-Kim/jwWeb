@@ -5,6 +5,7 @@ var MyButtonController = require('./components/MyButtonController');
 var Home = require('./components/Home');
 var ReactInfo = require('./components/reactInfo/ReactInfo');
 var ReactExam = require('./components/reactExam/ReactExam');
+var ReactBoard = require('./components/reactBoard/ReactBoard');
 require('./assets/css/list.css');
 
 var Router = ReactRouter.Router;
@@ -17,6 +18,7 @@ ReactDOM.render(
 		<Route path="/" component={Home}>
 			<Route path="reactInfo" component={ReactInfo}/>
 			<Route path="reactExam" component={ReactExam}/>
+			<Route path="reactBoard" component={ReactBoard}/>
 		</Route>
 	</Router>,
   document.querySelector('#wrapper')

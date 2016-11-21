@@ -8,16 +8,14 @@ var MenuItem = require('react-bootstrap/lib/MenuItem');
 var Image = require('react-bootstrap/lib/Image');
 var Link = ReactRouter.Link;
 var luffyImg = require('../assets/img/luffy.png');
+//<Image eventKey={1} className="luffyImg" src={luffyImg}></Image>
 
 var Home = React.createClass({		  
 	render: function(){
 		return(
-			<div>
+			<div className="body">
 				<Navbar inverse collapseOnSelect>
 					<Navbar.Header>
-						<Nav>
-		      				<Image eventKey={1} className="luffyImg" src={luffyImg}></Image>
-		      			</Nav>
 				    	<Navbar.Brand>
 				        	<a href="#">LUFFY HOME</a>
 				        </Navbar.Brand>
@@ -28,10 +26,10 @@ var Home = React.createClass({
 					        <NavDropdown eventKey={1} title="React" id="basic-nav-dropdown">
 					        	<MenuItem eventKey={1.1}><Link to="reactInfo">react 설명</Link></MenuItem>
 					        	<MenuItem eventKey={1.2}><Link to="reactExam">react 예제</Link></MenuItem>
+					        	<MenuItem eventKey={1.3}><Link to="reactBoard">게시판</Link></MenuItem>
 					        </NavDropdown>
 				        </Nav>
 				        <Nav pullRight>
-				        	<NavItem eventKey={2} href="#">Link Right</NavItem>
 				        </Nav>
 				    </Navbar.Collapse>
 			    </Navbar>

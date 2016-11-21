@@ -2,6 +2,7 @@ var React = require('react');
 var ReactList = require('./ReactList');
 var ReactExamAction = require('../../actions/ReactExamAction');
 var ReactExamStore = require('../../stores/ReactExamStore');
+var Pagination = require('react-bootstrap/lib/Pagination');
 
 //ReactExam Component 생성
 var ReactExam = React.createClass({
@@ -43,9 +44,22 @@ var ReactExam = React.createClass({
 					<h1>top</h1>
 					<button onClick={this.addItem}>글쓰기</button>
 				</section>
-				<section>
+				<section className="reactList">
 					<h1>List</h1>
 					<ReactList items={this.state.items}/>
+				</section>
+				<section className="reactListNav">
+				 	<Pagination 
+				        prev
+				        next
+				        first
+				        last
+				        ellipsis
+				        boundaryLinks
+				        items={20}
+				        maxButtons={5}
+				        activePage={this.state.activePage}
+				        onSelect={this.handleSelect} />
 				</section>
 			</div>	
 		)

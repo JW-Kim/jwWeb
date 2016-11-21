@@ -21,6 +21,7 @@
     "object-assign": "^4.0.1",
     "react": "^0.14.0",
     "react-bootstrap": "^0.30.6",
+    "react-bootstrap-table": "^2.5.8",
     "react-dom": "^0.14.0",
     "react-router": "^2.7.0",
     "url-loader": "^0.5.7",
