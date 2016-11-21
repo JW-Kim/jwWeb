@@ -4,9 +4,10 @@ header ul {height:50px}
 header li {height:30px; width:300px; display:inline; margin:20px; position:relative; top:10px}
 .luffyImg {height:50px; widhg:50px;}
 
-div.body {height:100%;}
-<!--div.main {height:700px; background-image: url("../img/luffy.png") ; opacity:0.1}-->
+/* div.main {height:700px; background-image: url("../img/luffy.png") ; opacity:0.1} */
+div.main {height:750px;}
 
+/*react 예제  */
 section.reactExamTop {height:35px}
 section.reactExamTop > input {width: 300px; height:30px}
 section.reactExamTop > button {height:30px; margin-left:5px}
@@ -16,5 +17,13 @@ section.reactList {height:100%; overflow-y:scroll}
 
 table td {border:1px solid black; height:40px; text-align:center}
 
-footer#footer {height:100px}
+
+
+/* 게시판 */
+
+
+
+
+
+footer#footer {height:100px; background-color:#E0E0E0;}
 
