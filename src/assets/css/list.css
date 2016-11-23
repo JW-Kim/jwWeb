@@ -4,6 +4,10 @@ header ul {height:50px}
 header li {height:30px; width:300px; display:inline; margin:20px; position:relative; top:10px}
 .luffyImg {height:50px; widhg:50px;}
 
+
+div.body{height:100%}
+
+
 /* div.main {height:700px; background-image: url("../img/luffy.png") ; opacity:0.1} */
 div.main {height:800px;}
 

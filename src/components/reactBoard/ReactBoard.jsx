@@ -6,86 +6,107 @@ var Button = require('react-bootstrap/lib/Button');
 var Pagination = require('react-bootstrap/lib/Pagination');
 require('react-bootstrap-table/dist/react-bootstrap-table-all.min.css');
 
+var CreateContent = require('./CreateContent');
+
 var products = [{
     id: 1,
-    name: "Product1",
-    price: 120
+    content: "Product1",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 2,
-    name: "Product2",
-    price: 80
+    content: "Product2",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 3,
-    name: "Product3",
-    price: 80
+    content: "Product3",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 4,
-    name: "Product4",
-    price: 80
+    content: "Product4",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 5,
-    name: "Product5",
-    price: 80
+    content: "Product5",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 6,
-    name: "Product6",
-    price: 80
+    content: "Product6",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 7,
-    name: "Product7",
-    price: 80
+    content: "Product7",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 8,
-    name: "Product8",
-    price: 80
+    content: "Product8",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 9,
-    name: "Product9",
-    price: 80
+    content: "Product9",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 10,
-    name: "Product10",
-    price: 80
+    content: "Product10",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 11,
-    name: "Product11",
-    price: 80
+    content: "Product11",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 12,
-    name: "Product12",
-    price: 80
+    content: "Product12",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 13,
-    name: "Product13",
-    price: 80
+    content: "Product13",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 14,
-    name: "Product14",
-    price: 80
+    content: "Product14",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }, {
     id: 15,
-    name: "Product15",
-    price: 80
-}, {
-    id: 16,
-    name: "Product16",
-    price: 80
-}, {
-    id: 17,
-    name: "Product17",
-    price: 80
+    content: "Product15",
+    createBy: '김정우',
+    createDt: '2015.11.21'
 }];
 
 var ReactBoard = React.createClass({
 	
 	render : function(){
+		
+		const selectRow = {
+	    	mode: 'checkbox'
+	    };
+		
+		const options = {
+	    	insertModalHeader: this.CreateContent
+	    };
+		
 		return(
 			<div>
-				<p className="btnAddContent"><Button>글쓰기</Button></p>
-				<BootstrapTable data={ products } height='650'>
-		        	<TableHeaderColumn dataField='id' isKey>Product ID</TableHeaderColumn>
-		        	<TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
-		        	<TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
+				<BootstrapTable data={ products } height='643'
+					options={ options }
+					selectRow={ selectRow }
+					insertRow>
+		        	<TableHeaderColumn dataField='id' isKey hidden>Product ID</TableHeaderColumn>
+		        	<TableHeaderColumn dataField='content' headerAlign='center'>글제목</TableHeaderColumn>
+		        	<TableHeaderColumn dataField='createBy' headerAlign='center' dataAlign='center' width='70'>작성자</TableHeaderColumn>
+		        	<TableHeaderColumn dataField='createDt' headerAlign='center' dataAlign='center' width='100'>작성일자</TableHeaderColumn>
 		    	</BootstrapTable>
 		    	<div className="pageNav">
 			    	<Pagination
