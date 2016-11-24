@@ -94,7 +94,7 @@ var ReactBoard = React.createClass({
 	    };
 		
 		const options = {
-	    	insertModalHeader: this.CreateContent
+			afterDeleteRow: onAfterDeleteRow
 	    };
 		
 		return(
@@ -102,7 +102,8 @@ var ReactBoard = React.createClass({
 				<BootstrapTable data={ products } height='643'
 					options={ options }
 					selectRow={ selectRow }
-					insertRow>
+					insertRow={ true }
+					deleteRow={ true }>
 		        	<TableHeaderColumn dataField='id' isKey hidden>Product ID</TableHeaderColumn>
 		        	<TableHeaderColumn dataField='content' headerAlign='center'>글제목</TableHeaderColumn>
 		        	<TableHeaderColumn dataField='createBy' headerAlign='center' dataAlign='center' width='70'>작성자</TableHeaderColumn>
@@ -123,6 +124,10 @@ var ReactBoard = React.createClass({
 			     </div>
 			</div>
 		)
+		
+		function onAfterDeleteRow(rowKeys) {
+		  alert('The rowkey you drop: ' + rowKeys);
+		}
 	}
 })
 
