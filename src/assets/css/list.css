@@ -7,6 +7,14 @@ header li {height:30px; width:300px; display:inline; margin:20px; position:relat
 
 div.body{height:100%}
 
+/*로그인*/
+div.divlLogin {background-color:#C53C3E}
+
+div.divLoginImg {text-align:center; height:80%}
+.luffyImg {height:100%}
+
+div.divLoginBtn {text-align:center; height:20%}
+.loginBtn {height:30%; width:400px; min-height:50px}
 
 /* div.main {height:700px; background-image: url("../img/luffy.png") ; opacity:0.1} */
 div.main {height:800px;}
