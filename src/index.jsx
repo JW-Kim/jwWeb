@@ -20,9 +20,8 @@ var hashHistory = ReactRouter.hashHistory;
 ReactDOM.render(
   	<Router history={hashHistory}>
   		<Route path="/" component={App}>
-  			<Route path="login" component={Login}>
-  				<Route path="redirect" component={LoginCallback}/>
-  			</Route>
+  			<Route path="login" component={Login}/>
+  			<Route path="loginCallback" component={LoginCallback}/>
 			<Route path="home" component={Home}>
 				<Route path="reactInfo" component={ReactInfo}/>
 				<Route path="reactExam" component={ReactExam}/>
