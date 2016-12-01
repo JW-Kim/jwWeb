@@ -4,6 +4,7 @@ var ReactRouter = require('react-router');
 var MyButtonController = require('./components/MyButtonController');
 var App = require('./components/App');
 var Login = require('./components/Login');
+var LoginCallback = require('./components/LoginCallback');
 var Home = require('./components/Home');
 var ReactInfo = require('./components/reactInfo/ReactInfo');
 var ReactExam = require('./components/reactExam/ReactExam');
@@ -19,7 +20,9 @@ var hashHistory = ReactRouter.hashHistory;
 ReactDOM.render(
   	<Router history={hashHistory}>
   		<Route path="/" component={App}>
-  			<Route path="login" component={Login}/>
+  			<Route path="login" component={Login}>
+  				<Route path="redirect" component={LoginCallback}/>
+  			</Route>
 			<Route path="home" component={Home}>
 				<Route path="reactInfo" component={ReactInfo}/>
 				<Route path="reactExam" component={ReactExam}/>
