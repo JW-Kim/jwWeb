@@ -5,7 +5,7 @@ var hashHistory = ReactRouter.hashHistory;
 var LoginCallback = React.createClass({
 	
 	componentDidMount: function() {
-		var naver_id_login = new Naver_id_login("oMt4FCo9Pk_8ErQZQKBe", "http://198.199.112.52/#/login");
+		var naver_id_login = new Naver_id_login("oMt4FCo9Pk_8ErQZQKBe", "http://198.199.112.52/#/LoginCallback");
 		alert(naver_id_login.oauthParams.access_token);
 		
 		// 네이버 사용자 프로필 조회

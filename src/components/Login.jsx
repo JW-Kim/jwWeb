@@ -9,7 +9,7 @@ var luffyImg = require('../assets/img/luffy.png');
 var Login = React.createClass({
 	
 	componentDidMount: function() {
-		var naver_id_login = new Naver_id_login("oMt4FCo9Pk_8ErQZQKBe", "http://198.199.112.52/#/login");
+		var naver_id_login = new Naver_id_login("oMt4FCo9Pk_8ErQZQKBe", "http://198.199.112.52/#/LoginCallback");
 		var state = naver_id_login.getUniqState();
 	  	naver_id_login.setButton("white", 2,40);
 	  	naver_id_login.setDomain("http://198.199.112.52");
