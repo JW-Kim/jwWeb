@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.jsx',
@@ -38,6 +39,9 @@ module.exports = {
       new HtmlWebpackPlugin({
 	      template: './src/index.html',
 	      inject: false
-	  })               
+	  }),
+	  new CopyWebpackPlugin([
+         { from: 'src/lib' , to: 'lib'}
+      ])   
   ]
 };
