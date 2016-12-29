@@ -23,7 +23,9 @@ var LoginCallback = React.createClass({
 	
 	render : function(){
 		return(
-			<div></div>	
+			<div>
+				<div id="naver_id_login"></div>
+			</div>	
 		)
 	}
 })
