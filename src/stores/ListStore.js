@@ -9,7 +9,7 @@ var ListStore = assign({}, EventEmitter.prototype, {
 	  $.ajax({
 		  url : '/user'
 	  })
-    return this.items;
+    return this.items ;
   },
 
   addNewItemHandler: function (text) {
