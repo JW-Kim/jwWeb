@@ -8,6 +8,7 @@ var LoginCallback = require('./components/LoginCallback');
 var Home = require('./components/Home');
 var ReactInfo = require('./components/reactInfo/ReactInfo');
 var ReactExam = require('./components/reactExam/ReactExam');
+var EsExam = require('./components/esExam/EsExam');
 var ReactBoard = require('./components/reactBoard/ReactBoard');
 require('./assets/css/list.css');
 
@@ -25,6 +26,7 @@ ReactDOM.render(
 			<Route path="home" component={Home}>
 				<Route path="reactInfo" component={ReactInfo}/>
 				<Route path="reactExam" component={ReactExam}/>
+				<Route path="esExam" component={EsExam}/>
 				<Route path="reactBoard" component={ReactBoard}/>
 			</Route>
 		</Route>		

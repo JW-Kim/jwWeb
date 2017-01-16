@@ -26,7 +26,8 @@ var Home = React.createClass({
 					        <NavDropdown eventKey={1} title="React" id="basic-nav-dropdown">
 					        	<MenuItem eventKey={1.1}><Link to="/home/reactInfo">react 설명</Link></MenuItem>
 					        	<MenuItem eventKey={1.2}><Link to="/home/reactExam">react 예제</Link></MenuItem>
-					        	<MenuItem eventKey={1.3}><Link to="/home/reactBoard">자유게시판</Link></MenuItem>
+					        	<MenuItem eventKey={1.3}><Link to="/home/esExam">ES 예제</Link></MenuItem>
+					        	<MenuItem eventKey={1.4}><Link to="/home/reactBoard">자유게시판</Link></MenuItem>
 					        </NavDropdown>
 				        </Nav>
 				        <Nav pullRight>
