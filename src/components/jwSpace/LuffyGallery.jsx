@@ -1,4 +1,5 @@
 var React = require('react');
+var Image = require('react-bootstrap/lib/Carousel');
 
 var LuffyGallery = React.createClass({
 	

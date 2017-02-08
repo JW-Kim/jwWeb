@@ -38,7 +38,7 @@ var JwSpace = React.createClass({
 				</div>
 				
 				<div className="gallery" >
-					<Link to="/luffyGallery">
+					<Link to="/luffyGallery" className="link">
 						<Image className="galleryImg" src={galleryImg}></Image>
 					</Link>
 				</div>
