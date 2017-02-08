@@ -4,6 +4,7 @@ var Image = require('react-bootstrap/lib/Image');
 
 var img1 = require('../../assets/img/img1.png');
 var img2 = require('../../assets/img/img2.png');
+var img3 = require('../../assets/img/img3.png');
 
 var LuffyGallery = React.createClass({
 	
@@ -19,17 +20,17 @@ var LuffyGallery = React.createClass({
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
-					<Image className="galleryImg" src={img2}></Image>
+						<Image className="galleryImg" src={img2}></Image>
 						<Carousel.Caption>
 							<h3>산후조리원</h3>
 							<p>D+6</p>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
-						<img width={900} height={500} alt="900x500" src="/assets/carousel.png"/>
+						<Image className="galleryImg" src={img3}></Image>
 						<Carousel.Caption>
-							<h3>Third slide label</h3>
-							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+							<h3>침대에서</h3>
+							<p>D+72</p>
 						</Carousel.Caption>
 					</Carousel.Item>
 				</Carousel>

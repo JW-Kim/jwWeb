@@ -67,6 +67,7 @@ div.jwSpace >.space > p > .address {font-family: 'Jeju Gothic', serif; font-size
 div.jwSpace >.space > p > .tel {font-family: 'Jeju Gothic', serif; font-size:10px; color:#9E9E9E}
 
 .LuffyGallery .galleryImg {width:100%}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {height:100%}
 
 
 footer#footer {height:50px; background-color:#E0E0E0;}
