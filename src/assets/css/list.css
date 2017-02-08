@@ -36,7 +36,13 @@ p.btnAddContent {text-align:right; margin-right:10px;}
 
 div.pageNav {text-align:center}
 
-
+/*jwSpace*/
+div.jwSpace {}
+div.jwSpace >.title {background-color:#FCE8E9; height:300px; padding-top:30px}
+div.jwSpace >.title > p {text-align:center}
+div.jwSpace >.title > p > .bpTitle {color:#fff; font-size:18px; font-family: 'Abril Fatface', cursive;}
+div.jwSpace >.title > .bpImg {margin-top:80px;}
+div.jwSpace >.title > .bpImg > .titleImg {width:100%;}
 
 
 footer#footer {height:50px; background-color:#E0E0E0;}

@@ -10,6 +10,9 @@ var ReactInfo = require('./components/reactInfo/ReactInfo');
 var ReactExam = require('./components/reactExam/ReactExam');
 var EsExam = require('./components/esExam/EsExam');
 var ReactBoard = require('./components/reactBoard/ReactBoard');
+
+/*JwSpace*/
+var JwSpace = require('./components/jwSpace/JwSpace');
 require('./assets/css/list.css');
 
 var Router = ReactRouter.Router;
@@ -21,6 +24,7 @@ var hashHistory = ReactRouter.hashHistory;
 ReactDOM.render(
   	<Router history={hashHistory}>
   		<Route path="/" component={App}>
+  			<Route path="jwSpace" component={JwSpace}/>
   			<Route path="login" component={Login}/>
   			<Route path="loginCallback" component={LoginCallback}/>
 			<Route path="home" component={Home}>
