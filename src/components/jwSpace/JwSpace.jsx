@@ -2,13 +2,14 @@ var React = require('react');
 var Image = require('react-bootstrap/lib/Image');
 var luffyTitleImg = require('../../assets/img/luffyTitleImg.png');
 var heartImg = require('../../assets/img/heart.png');
+var mapImg = require('../../assets/img/map.png');
 
 var JwSpace = React.createClass({
 	render : function(){
 		return (
 			<div className="jwSpace">
 				<div className="title">
-					<p><span className="bpTitle">FIRST BIRTHDAY PARTY INVITATION <br />2015.02.19 PM 12:00</span></p>
+					<p><span className="bpTitle">FIRST BIRTHDAY PARTY INVITATION <br />2017.03.19  PM 12:00</span></p>
 					<div className="bpImg"><Image className="titleImg" src={luffyTitleImg}></Image></div> 
 				</div>
 				<div className="main">
@@ -29,6 +30,17 @@ var JwSpace = React.createClass({
 						<div className="time">SUN PM 12:00</div>
 						<div className="place">몽중헌 방이점</div>						
 					</div>
+				</div>
+				<div className="galley">
+				</div>
+				<div className="space">
+					<Image className="mapImg" src={mapImg}></Image>
+					<p>
+						<span className="date">2017년 3월 19일 일요일 오후12시</span><br/>
+						<span className="place">몽중헌 방이점(21층)</span><br/>
+						<span className="address">서울시 송파구 위례성대로 10길 49 (S타워 21층)</span><br/>
+						<span className="tel">02)2202-8004, 8005</span>
+					</p>
 				</div>
 			</div>
 		)

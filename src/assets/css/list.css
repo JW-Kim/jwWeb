@@ -43,7 +43,7 @@ div.jwSpace >.title > p {text-align:center}
 div.jwSpace >.title > p > .bpTitle {color:#fff; font-size:18px; font-family: 'Abril Fatface', cursive;}
 div.jwSpace >.title > .bpImg {margin-top:60px;}
 div.jwSpace >.title > .bpImg > .titleImg {width:100%;}
-div.jwSpace >.main {padding-top:5px; text-align:center; margin-top:30px}
+div.jwSpace >.main {padding-top:5px; text-align:center; margin-top:30px; height:auto}
 div.jwSpace >.main > p {margin-bottom:20px}
 div.jwSpace >.main > p > span {font-family: 'Chelsea Market', cursive; font-size:18px}
 div.jwSpace >.main > div > span {font-family: 'Jeju Hallasan', serif;}
@@ -53,6 +53,13 @@ div.jwSpace >.main > div > .content {font-family: 'Nanum Brush Script', serif; m
 div.jwSpace >.main > div > .date {font-family: 'Pompiere', cursive; font-size:35px}
 div.jwSpace >.main > div > .time {font-family: 'Pompiere', cursive; font-size:25px}
 div.jwSpace >.main > div > .place {font-family: 'Jeju Gothic', serif; font-size:17px}
+div.jwSpace >.space {padding:10px; text-align:center}
+div.jwSpace >.space > .mapImg {width:100%;}
+div.jwSpace >.space > p {margin-top:10px}
+div.jwSpace >.space > p > .date {font-family: 'Jeju Gothic', serif; font-size:15px; color:#BF360C}
+div.jwSpace >.space > p > .place {font-family: 'Jeju Gothic', serif; font-size:15px}
+div.jwSpace >.space > p > .address {font-family: 'Jeju Gothic', serif; font-size:10px; color:#9E9E9E}
+div.jwSpace >.space > p > .tel {font-family: 'Jeju Gothic', serif; font-size:10px; color:#9E9E9E}
 
 
 footer#footer {height:50px; background-color:#E0E0E0;}
