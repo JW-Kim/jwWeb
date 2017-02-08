@@ -1,4 +1,7 @@
 var React = require('react');
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
+
 var Image = require('react-bootstrap/lib/Image');
 var luffyTitleImg = require('../../assets/img/luffyTitleImg.png');
 var heartImg = require('../../assets/img/heart.png');
@@ -34,8 +37,10 @@ var JwSpace = React.createClass({
 					</div>
 				</div>
 				
-				<div className="gallery">
-					<Image className="galleryImg" src={galleryImg}></Image>
+				<div className="gallery" >
+					<Link to="/luffyGallery">
+						<Image className="galleryImg" src={galleryImg}></Image>
+					</Link>
 				</div>
 				
 				<div className="space">
