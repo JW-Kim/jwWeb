@@ -14,6 +14,8 @@ var ReactBoard = require('./components/reactBoard/ReactBoard');
 /*JwSpace*/
 var JwSpace = require('./components/jwSpace/JwSpace');
 var LuffyGallery = require('./components/jwSpace/LuffyGallery');
+var JwInvitation = require('./components/jwSpace/JwInvitation');
+
 require('./assets/css/list.css');
 
 var Router = ReactRouter.Router;
@@ -26,6 +28,7 @@ ReactDOM.render(
   	<Router history={hashHistory}>
   		<Route path="/" component={App}>
   			<Route path="jwSpace" component={JwSpace}/>
+  			<Route path="jwInvitation" component={JwInvitation}/>
   			<Route path="luffyGallery" component={LuffyGallery}/>
   			
   			<Route path="login" component={Login}/>
