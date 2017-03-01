@@ -19,7 +19,9 @@ var JwInvitation = React.createClass({
 						<Image className="invitationBImg" src={invitationBImg}></Image>
 					</div>	
 					<div  className="invitationB2">
-						<Image className="invitationDadImg" src={invitationDadImg}></Image>
+						<a href="sms:010-8417-4005">
+							<Image className="invitationDadImg" src={invitationDadImg}></Image>
+						</a>
 						<Image className="invitationMomImg" src={invitationMomImg}></Image>
 					</div>
 				</div>
