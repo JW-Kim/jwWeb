@@ -70,7 +70,11 @@ div.jwSpace >.space > p > .tel {font-family: 'Jeju Gothic', serif; font-size:10p
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {height:100%}
 
 div.jwInvitation {width:100%}
-div.jwInvitation > .jwInvitationImg {width:100%}
+div.jwInvitation > .invitationA > .invitationAImg {width:100%}
+div.jwInvitation > .invitationB > .invitationB1 > .invitationBImg {width:100%}
+div.jwInvitation > .invitationB > .invitationB2 > .invitationDadImg {width:50%}
+div.jwInvitation > .invitationB > .invitationB2 > .invitationMomImg {width:50%}
+div.jwInvitation > .invitationD > .invitationDImg {width:100%}
 
 footer#footer {height:50px; background-color:#E0E0E0;}
 
