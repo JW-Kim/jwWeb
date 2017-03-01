@@ -4,7 +4,7 @@ var Button = require('react-bootstrap/lib/Button');
 var ReactRouter = require('react-router');
 
 var hashHistory = ReactRouter.hashHistory;
-var luffyImg = require('../assets/img/luffy.png');
+var luffyImg = require('../assets/img/luffy.jpg');
 
 var Login = React.createClass({
 	

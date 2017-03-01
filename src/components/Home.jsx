@@ -7,7 +7,7 @@ var NavDropdown = require('react-bootstrap/lib/NavDropdown');
 var MenuItem = require('react-bootstrap/lib/MenuItem');
 var Image = require('react-bootstrap/lib/Image');
 var Link = ReactRouter.Link;
-var luffyImg = require('../assets/img/luffy.png');
+var luffyImg = require('../assets/img/luffy.jpg');
 //<Image eventKey={1} className="luffyImg" src={luffyImg}></Image>
 
 var Home = React.createClass({		  
