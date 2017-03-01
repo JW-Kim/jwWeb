@@ -72,11 +72,8 @@ div.jwSpace >.space > p > .tel {font-family: 'Jeju Gothic', serif; font-size:10p
 div.jwInvitation {width:100%}
 div.jwInvitation > .invitationA > .invitationAImg {width:100%}
 div.jwInvitation > .invitationB > .invitationB1 > .invitationBImg {width:100%}
-div.jwInvitation > .invitationB > .invitationB2 > a > .invitationDadImg {width:50%; height:142px; background-image: url("../img/초대-B(아빠).jpg"); background-size:100% 100%; display:inline-block}
-div.jwInvitation > .invitationB > .invitationB2 > a > .invitationDadImg:hover {width:50%; height:142px; background-image: url("../img/초대-B(아빠변환).jpg"); background-size:100% 100%; display:inline-block}
-div.jwInvitation > .invitationB > .invitationB2 > a > .invitationMomImg {width:50%; height:142px; background-image: url("../img/초대-B(엄마).jpg"); background-size:100% 100%; display:inline-block}
-div.jwInvitation > .invitationB > .invitationB2 > a > .invitationMomImg:hover {width:50%; height:142px; background-image: url("../img/초대-B(엄마변환).jpg"); background-size:100% 100%; display:inline-block}
-
+div.jwInvitation > .invitationB > .invitationB2 > a > .invitationDadImg {width:50%}
+div.jwInvitation > .invitationB > .invitationB2 > a > .invitationMomImg {width:50%}
 div.jwInvitation > .invitationD > .invitationDImg {width:100%}
 
 footer#footer {height:50px; background-color:#E0E0E0;}
