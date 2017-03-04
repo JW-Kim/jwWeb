@@ -8,6 +8,7 @@ var invitationDadImg =  require('../../assets/img/초대-B(아빠).jpg');
 var invitationDadImgChg =  require('../../assets/img/초대-B(아빠변환).jpg');
 var invitationMomImg =  require('../../assets/img/초대-B(엄마).jpg');
 var invitationMomImgChg = require('../../assets/img/초대-B(엄마변환).jpg');
+var invitationCtextImg =  require('../../assets/img/초대-C(text).png');
 var invitationDImg =  require('../../assets/img/초대-D.jpg');
 var invitationDImg1 =  require('../../assets/img/초대-C(50일).jpg');
 var invitationDImg2 =  require('../../assets/img/초대-C(100일).jpg');
@@ -43,6 +44,7 @@ var JwInvitation = React.createClass({
 					</div>
 				</div>
 				<div className="invitationC">
+					<Image className="invitationCtextImg" src={invitationCtextImg}></Image>
 					<Carousel>
 					    <Carousel.Item>
 					    	<Image className="invitationCImg" src={invitationDImg1}></Image>

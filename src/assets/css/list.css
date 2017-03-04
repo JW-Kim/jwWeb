@@ -74,8 +74,10 @@ div.jwInvitation > .invitationA > .invitationAImg {width:100%}
 div.jwInvitation > .invitationB > .invitationB1 > .invitationBImg {width:100%}
 div.jwInvitation > .invitationB > .invitationB2 > a > .invitationDadImg {width:50%}
 div.jwInvitation > .invitationB > .invitationB2 > a > .invitationMomImg {width:50%}
-div.jwInvitation > .invitationC {width:100%}
+div.jwInvitation > .invitationC {width:100%; margin-top:20px}
+div.jwInvitation > .invitationC > .invitationCtextImg {width:100%; position:absolute; z-index:100}
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {width:100%}
+.carousel-control {z-index:1000}
 div.jwInvitation > .invitationD > .invitationDImg {width:100%}
 
 footer#footer {height:50px; background-color:#E0E0E0;}
